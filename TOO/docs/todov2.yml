@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Todo API
+  version: 1.0.0
+servers:
+  - url: https://b7710d56-baa3-4195-9607-62716ce212fb.mock.pstmn.io
+    description: Local server
+
+paths:
+  /tasks:
+    get:
+      summary: Get todo List
+      responses:
+        200:
+          description: List of tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+        
+components:
+  schemas:
+    Task:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        taskName:
+          type: string
+          example: Task 1
+        isCompleted:
+          type: boolean
+          example: false
+        remainingHours:
+          type: integer
+          example: 5

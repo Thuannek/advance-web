@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 10px;
+  background-color: white; 
+  color: red;
+}
+.counter {
+  margin-left: 10px;
+}
+.green-button {
+  background-color: green;
+}
+
+
+.content {
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+# Dèfine API load list todos
+
+Request:
+ Method: GET
+ Path: /tasks
+ Request hearders: no
+ Request body: no
+
+
+Response:
+  code: 200
+  Response header:
+    content-type: application/json
+    Response body:
+      [
+        {
+           "taskName": "Do exercise 01",
+            "id": 1,
+            "remainingHours": 4,
+            "isCompleted": true
+         }
+      ]
